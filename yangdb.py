@@ -11,8 +11,8 @@ from  colors import red,yellow,green,blue
 def connectmysql(host1,user1,passwd1,db1):
     db=MySQLdb.connect(host=str(host1), user=str(user1), passwd=str(passwd1),db=str(db1))
     cursor=db.cursor()
-    print red(str(db))
-    print yellow(str(cursor))
+    print(red(str(db)))
+    print(yellow(str(cursor)))
     return [db,cursor]
 
 
@@ -61,7 +61,7 @@ def ultimatesql(host,user,passwd,db,sql):
     db,cursor=connectmysql(host,user,passwd,db)
     execute(cursor,sql)
     result=getrow(db,cursor)
-    print red(str(result))
+    print(red(str(result)))
     return result
 
 
