@@ -1,6 +1,26 @@
 from colors import *
+import sys,traceback
+from traceback import *
+
+def exceptinfo():
+    print(yellow("++++++++++++++++++++++++++++++++++++Except info start++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"))
+    print(traceback.format_exc())
+    print(yellow("+++++++++++++++++++++++++++++++++++++Except info  end++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"))
+
+
+
+
+
+
+
+
+
+
+
+
+
 def dividingline():
-    print yellow('<====================================================Prepare to test===============================================================>')
+    print yellow('<===============================Dividing line=============================================>')
 
 pos="""
 
@@ -37,4 +57,16 @@ def position():
 
 
 def yangshow(var):
-    print(yellow('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  '+str(var)+'  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'))
+    linenumber1=linenumber()
+    print(yellow('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  '+str(var)+'  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'))
+
+
+
+from inspect import currentframe
+
+def linenumber():
+    cf = currentframe()
+    print yellow(str(cf.f_back.f_lineno))
+    return 'linenumber->'+str(cf.f_back.f_lineno)
+
+
