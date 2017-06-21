@@ -70,3 +70,13 @@ def linenumber():
     return 'linenumber->'+str(cf.f_back.f_lineno)
 
 
+def getfileeverylinetolist(fname):
+    '''
+    this fucntion is  used to get 
+    everyline to a list 
+    '''
+    with open(fname) as f:
+       content = f.readlines()
+    # you may also want to remove whitespace characters like `\n` at the end of each line
+    content = [x.strip() for x in content]
+    return content
