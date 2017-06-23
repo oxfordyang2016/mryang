@@ -3,9 +3,14 @@ def dlvideo(videolist):
     """
 	this functon is used to downoad video
     """
-    for url in videolist:
+    for idx,url in  enumerate(videolist):
     	print('-------------------------------------------')
-    	print('u are dealing the url=======>'+str(url))
+    	try:
+    		from colors import *
+    		print(green('this is the '+idx))
+    	except:
+    	    print('this is the ',idx)	
+    	print('u are dealing the url=======>'+str(url))	
     	os.system('youtube-dl -f best -i '+url )
 
 
