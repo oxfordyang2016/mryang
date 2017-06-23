@@ -20,7 +20,7 @@ def exceptinfo():
 
 
 def dividingline():
-    print yellow('<===============================Dividing line=============================================>')
+    print(yellow('<===============================Dividing line=============================================>'))
 
 pos="""
 
@@ -66,7 +66,7 @@ from inspect import currentframe
 
 def linenumber():
     cf = currentframe()
-    print yellow(str(cf.f_back.f_lineno))
+    print(yellow(str(cf.f_back.f_lineno)))
     return 'linenumber->'+str(cf.f_back.f_lineno)
 
 
@@ -97,5 +97,3 @@ def extractstuff(source,index):
 
 
 
-
-    

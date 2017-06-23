@@ -1,10 +1,10 @@
-import re,yangtest
+import re
 def getfileeverylinetolist(fname):
     '''
     this fucntion is  used to get 
     everyline to a list 
     '''
-    with open(fname) as f:
+    with open(fname,encoding='utf8') as f:
        content = f.readlines()
     # you may also want to remove whitespace characters like `\n` at the end of each line
     content = [x.strip() for x in content]
@@ -12,6 +12,9 @@ def getfileeverylinetolist(fname):
 
 
 def extractstuff(source,index):
+    '''
+    i have forgeted what is the function used to ?
+    '''
     targetgroup=[]
     for k in source:
         target=k.split()
