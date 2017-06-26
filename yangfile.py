@@ -8,7 +8,9 @@ def getfileeverylinetolist(fname):
         with open(fname,encoding='utf8') as f:
             content = f.readlines()
     except:
+        '''
         this line is designed for python2
+        ''' 
         with open(fname) as f:
             content = f.readlines()
     # you may also want to remove whitespace characters like `\n` at the end of each line
