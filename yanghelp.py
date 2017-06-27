@@ -30,14 +30,14 @@ def rename():
     print(renameinfo)
 
 def dir():
-	'''
+    '''
 	this function is to generate what the object include!
 	such as,fucntion,variable,etc. 
 	example:
 	dir(os)
-	'''
+    '''
     print(233)
-	dirobject = """
+    dirobject = """
     dir(yangfile)
     ['__builtins__',
      '__cached__',
@@ -52,5 +52,4 @@ def dir():
      're'-----------------the moudle import by the moudle
      ]
      """
-    #print(dirobject)
-    #print('233')
+    print(dirobject)
