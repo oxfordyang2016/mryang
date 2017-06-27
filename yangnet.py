@@ -1,5 +1,5 @@
 import os
-def pinghost(hostname):
+def pingh   ost(hostname):
     """
     this function is used to stimulate the ping command
     """
