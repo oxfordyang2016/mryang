@@ -29,3 +29,28 @@ def rename():
     '''
     print(renameinfo)
 
+def dir():
+	'''
+	this function is to generate what the object include!
+	such as,fucntion,variable,etc. 
+	example:
+	dir(os)
+	'''
+    print(233)
+	dirobject = """
+    dir(yangfile)
+    ['__builtins__',
+     '__cached__',
+     '__doc__',
+     '__file__',----the file (yangfile) position
+     '__loader__',
+     '__name__',------the moudule name
+     '__package__',----the package name
+     '__spec__',
+     'extractstuff',------the function by writer
+     'getfileeverylinetolist',
+     're'-----------------the moudle import by the moudle
+     ]
+     """
+    #print(dirobject)
+    #print('233')
