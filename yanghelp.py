@@ -5,8 +5,8 @@ __version__ = 1.0
 
 def goal():
 	'''
-	the main goal of this script is to 
-	help myself to grasp python basic 
+	the main goal of this script is to
+	help myself to grasp python basic
 	core and develop the profucity
 	'''
 	print('make a good basic of python')
@@ -32,7 +32,7 @@ def rename():
 def dir():
     '''
 	this function is to generate what the object include!
-	such as,fucntion,variable,etc. 
+	such as,fucntion,variable,etc.
 	example:
 	dir(os)
     '''
@@ -53,3 +53,22 @@ def dir():
      ]
      """
     print(dirobject)
+
+
+def list():
+	'''
+	list append method
+	eg:
+	a=[]
+	for k in range(5):
+		a.append(k)
+	'''
+	return
+
+def writefile():
+    a='''
+    with open('somefile.txt', 'a') as the_file:
+	     the_file.write('Hello\n')
+	'''
+    print(a)
+	return
