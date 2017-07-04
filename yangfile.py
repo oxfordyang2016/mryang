@@ -1,8 +1,8 @@
-import re
+import re,os
 def getfileeverylinetolist(fname):
     '''
-    this fucntion is  used to get 
-    everyline to a list 
+    this fucntion is  used to get
+    everyline to a list
     '''
     try:
         with open(fname,encoding='utf8') as f:
@@ -10,7 +10,7 @@ def getfileeverylinetolist(fname):
     except:
         '''
         this line is designed for python2
-        ''' 
+        '''
         with open(fname) as f:
             content = f.readlines()
     # you may also want to remove whitespace characters like `\n` at the end of each line
@@ -33,7 +33,10 @@ def extractstuff(source,index):
     return targetgroup
 
 
-
-
-
-
+def getfilename(pathorname):
+    base=os.path.basename(pathorname)
+    print('The filename including extension ')
+    print(base)
+    name=os.path.splitext(base)[0]
+    print('The filename without extension')
+    print(name)

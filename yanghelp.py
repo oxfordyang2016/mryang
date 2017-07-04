@@ -66,9 +66,18 @@ def list():
 	return
 
 def writefile():
-    a='''
+    a="""
+	1.write string
     with open('somefile.txt', 'a') as the_file:
 	     the_file.write('Hello\n')
-	'''
+    2.write  variable
+	 with open('cap.txt','w') as test:
+     for k in final:
+         if str(k)!='<br/>':
+             test.write(k+'\n')
+   
+
+
+
+	"""
     print(a)
-	return
