@@ -40,3 +40,8 @@ def getfilename(pathorname):
     name=os.path.splitext(base)[0]
     print('The filename without extension')
     print(name)
+    return [base,name]
+
+
+def deletfile(filename):
+    os.remove(filename)

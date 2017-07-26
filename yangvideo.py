@@ -4,7 +4,7 @@ from colors import *
 
 def dlvideo(videolist):
     """
-	this functon is used to downoad video
+	this functon is used to downoad video for youtube
     """
     for idx,url in  enumerate(videolist):
         print('this file includes '+str(len(videolist))+' url+may include empty!')
@@ -19,7 +19,7 @@ def dlvideo(videolist):
 
 
 # get youtube video filename
-def getvideoname(url):
+def getvideoname(url):#this url also be vid
     allinfo=os.system('youtube-dl --get-filename '+str(url)+('> filename.txt'))
     a=yangfile.getfileeverylinetolist('filename.txt')
     print('the filename is the fellowing')
@@ -31,3 +31,27 @@ def getvideoname(url):
         filename=os.path.splitext(base)[0]
         namespace.append(filename)
     return namespace[0]
+
+
+#get all id of a playlist
+def get_all_vid_and_url_of_a_playlist(playlisturl):
+    '''
+    this is used to get all vid
+    '''
+    os.system('youtube-dl --get-id -i '+str(playlisturl)+('>allvid.txt'))
+    allvid = yangfile.getfileeverylinetolist('allvid.txt')
+    allurl=[]
+    for k in allvid:
+        allurl.append('https://www.youtube.com/watch?v='+str(k))
+    return [allvid,allurl]
+
+
+
+
+
+
+
+
+
+def embedsubtile():
+    filename=os.listdir('.')
