@@ -1,4 +1,6 @@
 from bs4 import BeautifulSoup
+#https://stackoverflow.com/questions/7225900/how-to-pip-install-packages-according-to-requirements-txt-from-a-local-directory
+#pip install beautifulsoup4
 #BeautifulSoup need to be installed
 import requests,os,re
 from mryang import yangvideo,yangfile,yangtest
