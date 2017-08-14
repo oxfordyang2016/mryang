@@ -78,3 +78,19 @@ def get_size(start_path = '.'):
         total_size = os.path.getsize(start_path)
     print('the size is-------' ,round(total_size/1024/1024,2), 'M--------',round(total_size/1024/1024/1024,2),'G')
     return total_size
+
+
+
+
+#computer the amouts of file s
+def get_numbers_of_files():
+    num = len(os.listdir('.'))
+    print('the amounts of the pwd dir is ===> '+str(num))
+    return num
+
+
+
+
+
+
+
