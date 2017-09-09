@@ -1,6 +1,22 @@
 from colors import *
 import sys,traceback
 from traceback import *
+import time
+
+#test a runtime of a function
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 def exceptinfo():
     print(yellow("++++++++++++++++++++++++++++++++++++Except info start++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"))
@@ -24,12 +40,12 @@ def dividingline():
 
 pos="""
 
-                                                                 
+
 
                                                                  /\
-                                                                /  \ 
+                                                                /  \
                                                                /    \
-                                                               \    / 
+                                                               \    /
                                                                 \  /
                                                                  \/
 
@@ -39,21 +55,21 @@ pos="""
 
 """
 
-pos1="""                                                                   
+pos1="""
                                                                           ||
                                                                           ||
-                                                                          || 
+                                                                          ||
                                                                           ||
                                                                           ||
                                                                           ||
                                                                           vv
                                                                           88
-                                                                          vv  
+                                                                          vv
 
 """
 def position():
     print(green(pos1))
-    
+
 
 
 def yangshow(var):
@@ -68,5 +84,3 @@ def linenumber():
     cf = currentframe()
     print(yellow(str(cf.f_back.f_lineno)))
     return 'linenumber->'+str(cf.f_back.f_lineno)
-
-
