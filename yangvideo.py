@@ -1,6 +1,6 @@
 import os
 from mryang import yangfile#i donnot understand why now???it should be import yangfile,fuck
-from colors import *
+#from colors import *
 
 def dlvideo(videolist):
     """
