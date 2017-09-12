@@ -7,5 +7,5 @@ def upload(comment='allok'):
 	yanggit.upload('add comment of upload function')
 	'''
 	os.system('git add .')
-	os.system('git commit -m '+str(comment))
+	os.system('git commit -m " '+str(comment)+'"')
 	os.system('git push origin master')
