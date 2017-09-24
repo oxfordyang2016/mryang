@@ -76,7 +76,7 @@ def high_quality_dl(videolist):
             print('this is the ',idx)
         print('u are dealing the url=======>'+str(url))
         try:
-            os.system('-f bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio --merge-output-format mp4 '+url )
+            os.system('youtube-dl -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio --merge-output-format mp4 '+url )
         except:
             os.system('youtube-dl --write-sub  --sub-lang en -f best -i  '+url )
 
