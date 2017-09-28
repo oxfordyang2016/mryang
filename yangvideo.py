@@ -33,6 +33,7 @@ def getvideoname(url):#this url also be vid
     return namespace[0]
 
 
+
 #get all id of a playlist
 def get_all_vid_and_url_of_a_playlist(playlisturl):
     '''
@@ -46,12 +47,8 @@ def get_all_vid_and_url_of_a_playlist(playlisturl):
     return [allvid,allurl]
 
 
-
-
-
-
-
-
-
 def embedsubtile():
     filename=os.listdir('.')
+
+
+

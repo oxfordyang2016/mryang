@@ -34,9 +34,9 @@ def getvidandname(url):
 #from the caption diy to get subtitle html
 # this is for automatical caption from youtube!
 def getsubtitle(name,vid):
-    a=requests.get('http://diycaptions.com/php/get-automatic-captions-as-srt.php?id='+str(vid))
+    a = requests.get('http://diycaptions.com/php/get-automatic-captions-as-srt.php?id='+str(vid))
     #get html as string
-    content=a.content
+    content = a.content
     #parser html
     soup=BeautifulSoup(content)
     c=soup.find_all('pre')
@@ -67,6 +67,9 @@ def ultimategetsub(url):
 
 def getsubtitle_of_playlist(playlisturl):
     '''
+    this function head is used to get all urls of a playlist 
+    but the function does not work with the situation that 
+    when a playlist incluidng >120 items.
     example:
     getsubtitle_of_playlist('https://www.youtube.com/playlist?list=PLar0ZIPrNX9ftDSmaD2tO32wjjSEAYU-P')
 
