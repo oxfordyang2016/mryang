@@ -52,3 +52,30 @@ def embedsubtile():
 
 
 
+
+
+def high_quality_dl(videolist):
+    """
+    this functon is used to downoad high qualityvideo for youtube
+    https://askubuntu.com/questions/486297/how-to-select-video-quality-from-youtube-dl
+     !youtube-dl -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaud
+     io --merge-output-format mp4  https://www.youtube.com/watch?v=iQM0btlf
+     O1o&feature=youtu.be
+
+    """
+    for idx,url in  enumerate(videolist):
+        print('this file includes '+str(len(videolist))+' url+may include empty!')
+        print('=========================================')
+        try:
+            print(green('this is the '+idx))
+        except:
+            print('this is the ',idx)
+        print('u are dealing the url=======>'+str(url))
+        try:
+            os.system('youtube-dl -f bestvideo[ext=mp4]+bestaudio[ext=m4a]/bestvideo+bestaudio --merge-output-format mp4 '+url )
+        except:
+            os.system('youtube-dl --write-sub  --sub-lang en -f best -i  '+url )
+
+
+
+

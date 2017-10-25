@@ -16,7 +16,7 @@ import requests
 import subprocess
 import sys
 import tabulate
- 
+#https://torrasave.top/torrent/80BC9D85B81180BF0DA309B3F9B899B4DB8B8095.torrent?title=the-good-the-bad-and-the-ugly-1966-1080p 
  
 class OutColors:
     DEFAULT = '\033[0m'

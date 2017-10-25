@@ -1,4 +1,4 @@
-from colors import *
+#from colors import *
 import sys,traceback
 from traceback import *
 import time
@@ -19,9 +19,9 @@ import time
 
 
 def exceptinfo():
-    print(yellow("++++++++++++++++++++++++++++++++++++Except info start++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"))
+    print("++++++++++++++++++++++++++++++++++++Except info start++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
     print(traceback.format_exc())
-    print(yellow("+++++++++++++++++++++++++++++++++++++Except info  end++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"))
+    print("+++++++++++++++++++++++++++++++++++++Except info  end++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
 
 
 
@@ -36,7 +36,7 @@ def exceptinfo():
 
 
 def dividingline():
-    print(yellow('<===============================Dividing line=============================================>'))
+    print('<===============================Dividing line=============================================>')
 
 pos="""
 
@@ -68,13 +68,13 @@ pos1="""
 
 """
 def position():
-    print(green(pos1))
+    print(pos1)
 
 
 
 def yangshow(var):
     linenumber1=linenumber()
-    print(yellow('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  '+str(var)+'  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'))
+    print('>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>  '+str(var)+'  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<')
 
 
 
@@ -82,5 +82,5 @@ from inspect import currentframe
 
 def linenumber():
     cf = currentframe()
-    print(yellow(str(cf.f_back.f_lineno)))
+    print(str(cf.f_back.f_lineno))
     return 'linenumber->'+str(cf.f_back.f_lineno)
